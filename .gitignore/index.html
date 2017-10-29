@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VideoCall by WebRTC</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery.js"></script>
+        <script src="peer.js"></script>
+        <script src="socket.io.js"></script>
+    </head>
+    <br>
+        <div class="div-content">
+            <p>Users online</p>
+            <ul id="ulUser">
+
+            </ul>
+            <h3 id = "my-peer"></h3>
+            <video id="localStream" width="300" controls></video>
+            <br /><br />
+            <video id="remoteStream" width="300" controls></video>
+            <br /><br />
+            <input type="text" id="remoteId" placeholder="Remote ID">
+            <button id="btnCall" type="buttion">Call</button>
+            </br>
+        </div>
+    <div class="div-sign-up">
+        <input type="text" id="txtUsername" placeholder="Enter your name">
+        <button id="btnSignUp">Sign up</button>
+    </div>
+    </body>
+    <script src="main.js"></script>
+</html>
