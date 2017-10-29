@@ -35,7 +35,7 @@ function playStream(idVideoTag, stream) {
     video.srcObject = stream;  //gan video vao stream object
     video.play();
 }
-var peer = new Peer({key: 'lwjd5qra8257b9'}); // su dung thu vien peerjs de tao peer nguoi dung
+var peer = new Peer({key: 'peerjs', host: 'mypeer001.herokuapp.com', secure:true, port: 443}); // su dung thu vien peerjs de tao peer nguoi dung
 peer.on('open', function (id) {
     $('#my-peer').append(id); //show peer ra man hinh
     //sign up
